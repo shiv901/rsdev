@@ -15,7 +15,8 @@ const Navbar = () => {
       </div>
       <a
         href={resumePath}
-        download='Shivansh - Full stack 4 years.pdf'
+        target='_blank'
+        // download='Shivansh - Full stack 4 years.pdf'
         className='bg-yellow-300 rounded px-4 py-1 text-gray-950'
       >
         <span className='flex justify-center items-center gap-2'>
