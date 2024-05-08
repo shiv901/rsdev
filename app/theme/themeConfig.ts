@@ -1,6 +1,6 @@
-// import { theme, type ThemeConfig } from 'antd';
+import { theme, type ThemeConfig } from 'antd';
 
-const themeConfig: any = {
+const themeConfig: ThemeConfig = {
   // algorithm: theme.darkAlgorithm,
   token: {
     fontSize: 16,

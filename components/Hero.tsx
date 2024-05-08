@@ -13,7 +13,7 @@ export default function Hero() {
           Intersing enough? <span className='text-green-300'>Let's Talk</span>
         </p>
         <button className='bg-green-500 px-6 py-2 w-max rounded-md  '>
-          Contact Me
+          <a href='#contact'> Contact Me</a>
         </button>
       </div>
     </>

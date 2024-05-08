@@ -4,6 +4,8 @@ import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer/Footer';
 import CursorBlob from '@/components/CursorBlob';
+import { ConfigProvider } from 'antd';
+import themeConfig from './theme/themeConfig';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -20,10 +22,12 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning={true}>
       <body className={montserrat.className}>
-        <Navbar />
-        <main className='body-main'>{children}</main>
-        <Footer />
-        <CursorBlob />
+        <ConfigProvider theme={themeConfig}>
+          <Navbar />
+          <main className='body-main'>{children}</main>
+          <Footer />
+          <CursorBlob />
+        </ConfigProvider>
       </body>
     </html>
   );
